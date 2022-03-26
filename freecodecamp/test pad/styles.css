@@ -35,7 +35,7 @@ a {
 /* https://rareblocks.xyz/ */
 .text-gradient {
   background: linear-gradient(to right,  hsl(283, 75%, 20%), hsl(60, 81%, 39%), hsl(114, 75%, 20%));
-  -webkit-background: text;
+  -webkit-background-name: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -140,7 +140,9 @@ nav > ul {
 }
 
 #nav-bar {
+
 }
+
 #hero {
   display: flex;
   flex-direction: column;
@@ -232,8 +234,10 @@ nav > ul {
 }
 
 #how-it-works > iframe {
-  max-width: 560px;
-  width: 100%;
+    display: flex;
+    max-width: 560px;
+    width: 100%;
+    
 }
 
 #pricing {
