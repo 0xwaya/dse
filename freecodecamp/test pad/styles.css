@@ -34,8 +34,8 @@ a {
 
 /* https://rareblocks.xyz/ */
 .text-gradient {
-  background: linear-gradient(to right, #e25e00, #e6e600, #008000);
-  -webkit-background-clip: text;
+  background: linear-gradient(to right,  hsl(283, 75%, 20%), hsl(60, 81%, 39%), hsl(114, 75%, 20%));
+  -webkit-background: text;
   -webkit-text-fill-color: transparent;
 }
 
