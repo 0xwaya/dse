@@ -1,45 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 html,
 body {
-  min-width: 290px;
-  color: #fff;
-  background-color: #474747;
-  font-family: 'Open Sans', Arial, sans-serif;
-  line-height: 1.5;
-}
-
-#navbar {
-  position: fixed;
-  min-width: 290px;
-  top: 0px;
-  left: 0px;
-  width: 300px;
+  width: 100%;
   height: 100%;
-  border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
+  color: #fcf7fb;
+  background-color: #1f1f1fd2;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
 }
 
 header {
-  color: #bd6705;
+  color: #da5700;
+  font-size: 30px;
   margin: 10px;
-  text-align: center;
   font-size: 1.8em;
-  font-weight: thin;
+  font-weight:thin;
+}
+#navbar {
+  position: relative;
+  background-color: #1f1f1fd2;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  margin-bottom: 10px;
 }
 
-#main-doc header {
-  text-align: left;
-  margin: 0px;
+#navbar header {
+  color: #da5700;
+  font-size: 20px;
+  font-size: 1.6em;  
 }
 
 #navbar ul {
   height: 88%;
-  padding: 0;
+  padding: 2.5x;
+  border-radius: 10%;
+  color: #1f1f1fd2;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
+  border: 1px ;
+  list-style: none;
+  position: relative;
+  left: -20px;
+  padding: 15px;
+  border-bottom: dotted 1px;
 }
 
 #navbar li {
-  color: #ebe4dc;
+  color: #da5700;
   border-top: 1px solid;
   list-style: none;
   position: relative;
@@ -48,15 +60,23 @@ header {
 
 #navbar a {
   display: block;
-  padding: 10px 30px;
-  color: #e27900;
+  padding: 4px;
+  color: #fcf7fb;
   text-decoration: none;
   cursor: pointer;
 }
+#main-doc header {
+  position: center;
+  font-size: 30px;
+  margin: 10px;
+  padding: 0px;
+  font-size:  1.8em;
+  font-weight: thin;
+}
 
 #main-doc {
-  position: absolute;
-  margin-left: 310px;
+  position: relative;
+  margin-left: 10px;
   padding: 20px;
   margin-bottom: 110px;
 }
@@ -72,7 +92,7 @@ section li {
 }
 
 code {
-  color: #a80068;  
+  color: #b0bd02;  
   display: block;
   text-align: left;
   white-space: pre-line;
@@ -83,7 +103,7 @@ code {
   background-color: #000000;
   padding: 15px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 815px) {
@@ -94,7 +114,7 @@ code {
   }
 
   #navbar {
-    background-color: white;
+    background-color:#1f1f1fd2;
     position: absolute;
     top: 0;
     padding: 0;

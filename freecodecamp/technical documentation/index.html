@@ -1,442 +1,246 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="./images/waya-logo-bw.png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <title>waya docs</title>
-
-
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waya docs</title>
+    <link rel="icon" type="image/png" href="./images/waya-logo-bw.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+  </head>
   <body>
-  <nav id="navbar">
-    <header>waya labs docs</header>
-    <ul>
-      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-      <li>
-        <a class="nav-link" href="#What_you_should_already_know"
-          >What you should already know</a
-        >
-      </li>
-      <li>
-        <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
-      </li>
-      <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-      <li><a class="nav-link" href="#Variables">Variables</a></li>
-      <li>
-        <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
-      </li>
-      <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
-      <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
-      <li><a class="nav-link" href="#Constants">Constants</a></li>
-      <li><a class="nav-link" href="#Data_types">Data types</a></li>
-      <li>
-        <a class="nav-link" href="#if...else_statement">if...else statement</a>
-      </li>
-      <li><a class="nav-link" href="#while_statement">while statement</a></li>
-      <li>
-        <a class="nav-link" href="#Function_declarations"
-          >Function declarations</a
-        >
-      </li>
-      <li><a class="nav-link" href="#Reference">Reference</a></li>
-    </ul>
-  </nav>
-  <main id="main-doc">
-    <section class="main-section" id="Introduction">
-      <header>Introduction</header>
-      <article>
-        <p>
-            Waya Labs is a research and development Hub focus on blockchain innovation
-            to drive mass adoption by building a Digital Sovereign Ecosystem (DSE) by 
-            integrating distributed web3 protocols to  create a censorship resistance 
-            ecosystem for our community.
-        </p>
-  
-        <p>
-            Researching and testing creative and successful smart contract use cases are 
-            key to identify what works and what could be improved. allowing new solutions 
-            and utilities to emerge in a constant testing and development of new ways to 
-            participate in the blockchain revolution.
-        </p>
-        <ul>
-          <li>
-            Our distributed applications will be designed with multiple insentive
-            based protocols such as work to earn for team members, learn to earn to attract 
-            new users, and participate to earn to reward our community members and NFT holders
-            with access to special incubator presale allocations and a weekly lottery for 
-            hodlers.
-          </li>
-          <li>
-           To ensure digital sovereignty it is necessary for each element of Waya Labs 
-           ecosystem to operate as a distributed web3 protocol to minimize the risks
-           of a single point of failure. the initial versions might hace some centralized 
-           web3 protocols temporarily, each new version will integrate decentralized interoperability
-           to replace previous centralized funtions.
-          </li>
-        </ul>
-      </article>
-    </section>
-    <section class="main-section" id="What_you_should_already_know">
-      <header>Principals</header>
-      <article>
-        <p>Research and development will focus on the following principles:</p>
-  
-        <ul>
-          <li>
-            Digital Sovereign Ecosystems: Build Waya Labs ecosystem on distributed networks, protocols and storage to ensure digital sovereignty for our participating community. 
-        </li>
-          <li>Participatory Value Creation: Waya Labs Team members and community will earn by participating in various forms to earn rewards, like liquidity staking, community building and work to earn initiative.</li>
-          <li>
-            Universal Basic Equity: Community participation and deflationary tokenomics linked to automated NFT protocols will ensure value creation and build long lasting equity upside.
-          </li>
-        </ul>
-      </article>
-    </section>
-    <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript and Java</header>
-      <article>
-        <p>
-          JavaScript and Java are similar in some ways but fundamentally different
-          in some others. The JavaScript language resembles Java but does not have
-          Java's static typing and strong type checking. JavaScript follows most
-          Java expression syntax, naming conventions and basic control-flow
-          constructs which was the reason why it was renamed from LiveScript to
-          JavaScript.
-        </p>
-  
-        <p>
-          In contrast to Java's compile-time system of classes built by
-          declarations, JavaScript supports a runtime system based on a small
-          number of data types representing numeric, Boolean, and string values.
-          JavaScript has a prototype-based object model instead of the more common
-          class-based object model. The prototype-based model provides dynamic
-          inheritance; that is, what is inherited can vary for individual objects.
-          JavaScript also supports functions without any special declarative
-          requirements. Functions can be properties of objects, executing as
-          loosely typed methods.
-        </p>
-        <p>
-          JavaScript is a very free-form language compared to Java. You do not
-          have to declare all variables, classes, and methods. You do not have to
-          be concerned with whether methods are public, private, or protected, and
-          you do not have to implement interfaces. Variables, parameters, and
-          function return types are not explicitly typed.
-        </p>
-      </article>
-    </section>
-    <section class="main-section" id="Hello_world">
-      <header>Hello world</header>
-      <article>
-        To get started with writing JavaScript, open the Scratchpad and write your
-        first "Hello world" JavaScript code:
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
-        </code>
-  
-        Select the code in the pad and hit Ctrl+R to watch it unfold in your
-        browser!
-      </article>
-    </section>
-    <section class="main-section" id="Variables">
-      <header>Variables</header>
-      <p>
-        You use variables as symbolic names for values in your application. The
-        names of variables, called identifiers, conform to certain rules.
-      </p>
-      <p>
-        A JavaScript identifier must start with a letter, underscore (_), or
-        dollar sign ($); subsequent characters can also be digits (0-9). Because
-        JavaScript is case sensitive, letters include the characters "A" through
-        "Z" (uppercase) and the characters "a" through "z" (lowercase).
-      </p>
-      <p>
-        You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
-        You can also use the Unicode escape sequences as characters in
-        identifiers. Some examples of legal names are Number_hits, temp99, and
-        _name.
-      </p>
-    </section>
-    <section class="main-section" id="Declaring_variables">
-      <header>Declaring variables</header>
-      <article>
-        You can declare a variable in three ways:
-        <p>
-          With the keyword var. For example, <code>var x = 42.</code> This syntax
-          can be used to declare both local and global variables.
-        </p>
-        <p>
-          By simply assigning it a value. For example, <code>x = 42.</code> This
-          always declares a global variable. It generates a strict JavaScript
-          warning. You shouldn't use this variant.
-        </p>
-        <p>
-          With the keyword let. For example,<code> let y = 13.</code> This syntax
-          can be used to declare a block scope local variable. See Variable scope
-          below.
-        </p>
-      </article>
-    </section>
-    <section class="main-section" id="Variable_scope">
-      <header>Variable scope</header>
-      <article>
-        <p>
-          When you declare a variable outside of any function, it is called a
-          global variable, because it is available to any other code in the
-          current document. When you declare a variable within a function, it is
-          called a local variable, because it is available only within that
-          function.
-        </p>
-  
-        <p>
-          JavaScript before ECMAScript 2015 does not have block statement scope;
-          rather, a variable declared within a block is local to the function (or
-          global scope) that the block resides within. For example the following
-          code will log 5, because the scope of x is the function (or global
-          context) within which x is declared, not the block, which in this case
-          is an if statement.
-        </p>
-        <code>if (true) { var x = 5; } console.log(x); // 5</code>
-        <p>
-          This behavior changes, when using the let declaration introduced in
-          ECMAScript 2015.
-        </p>
-  
-        <code
-          >if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-          defined</code
-        >
-      </article>
-    </section>
-    <section class="main-section" id="Global_variables">
-      <header>Global variables</header>
-      <article>
-        <p>
-          Global variables are in fact properties of the global object. In web
-          pages the global object is window, so you can set and access global
-          variables using the window.variable syntax.
-        </p>
-  
-        <p>
-          Consequently, you can access global variables declared in one window or
-          frame from another window or frame by specifying the window or frame
-          name. For example, if a variable called phoneNumber is declared in a
-          document, you can refer to this variable from an iframe as
-          parent.phoneNumber.
-        </p>
-      </article>
-    </section>
-    <section class="main-section" id="Constants">
-      <header>Constants</header>
-      <article>
-        <p>
-          You can create a read-only, named constant with the const keyword. The
-          syntax of a constant identifier is the same as for a variable
-          identifier: it must start with a letter, underscore or dollar sign and
-          can contain alphabetic, numeric, or underscore characters.
-        </p>
-  
-        <code>const PI = 3.14;</code>
-        <p>
-          A constant cannot change value through assignment or be re-declared
-          while the script is running. It has to be initialized to a value.
-        </p>
-  
-        <p>
-          The scope rules for constants are the same as those for let block scope
-          variables. If the const keyword is omitted, the identifier is assumed to
-          represent a variable.
-        </p>
-  
-        <p>
-          You cannot declare a constant with the same name as a function or
-          variable in the same scope. For example:
-        </p>
-  
-        <code
-          >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-          CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-          }</code
-        >
-        However, object attributes are not protected, so the following statement
-        is executed without problems.
-        <code
-          >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code
-        >
-      </article>
-    </section>
-    <section class="main-section" id="Data_types">
-      <header>Data types</header>
-      <article>
-        <p>The latest ECMAScript standard defines seven data types:</p>
-        <ul>
-          <li>
-            <p>Six data types that are primitives:</p>
-            <ul>
-              <li>Boolean. true and false.</li>
-              <li>
-                null. A special keyword denoting a null value. Because JavaScript
-                is case-sensitive, null is not the same as Null, NULL, or any
-                other variant.
-              </li>
-              <li>undefined. A top-level property whose value is undefined.</li>
-              <li>Number. 42 or 3.14159.</li>
-              <li>String. "Howdy"</li>
-              <li>
-                Symbol (new in ECMAScript 2015). A data type whose instances are
-                unique and immutable.
-              </li>
-            </ul>
-          </li>
-  
-          <li>and Object</li>
-        </ul>
-        Although these data types are a relatively small amount, they enable you
-        to perform useful functions with your applications. Objects and functions
-        are the other fundamental elements in the language. You can think of
-        objects as named containers for values, and functions as procedures that
-        your application can perform.
-      </article>
-    </section>
-    <section class="main-section" id="if...else_statement">
-      <header>if...else statement</header>
-      <article>
-        Use the if statement to execute a statement if a logical condition is
-        true. Use the optional else clause to execute a statement if the condition
-        is false. An if statement looks as follows:
-  
-        <code>if (condition) { statement_1; } else { statement_2; }</code>
-        condition can be any expression that evaluates to true or false. See
-        Boolean for an explanation of what evaluates to true and false. If
-        condition evaluates to true, statement_1 is executed; otherwise,
-        statement_2 is executed. statement_1 and statement_2 can be any statement,
-        including further nested if statements.
-        <p>
-          You may also compound the statements using else if to have multiple
-          conditions tested in sequence, as follows:
-        </p>
-        <code
-          >if (condition_1) { statement_1; } else if (condition_2) { statement_2;
-          } else if (condition_n) { statement_n; } else { statement_last; }
-        </code>
-        In the case of multiple conditions only the first logical condition which
-        evaluates to true will be executed. To execute multiple statements, group
-        them within a block statement ({ ... }) . In general, it's good practice
-        to always use block statements, especially when nesting if statements:
-  
-        <code
-          >if (condition) { statement_1_runs_if_condition_is_true;
-          statement_2_runs_if_condition_is_true; } else {
-          statement_3_runs_if_condition_is_false;
-          statement_4_runs_if_condition_is_false; }</code
-        >
-        It is advisable to not use simple assignments in a conditional expression,
-        because the assignment can be confused with equality when glancing over
-        the code. For example, do not use the following code:
-        <code>if (x = y) { /* statements here */ }</code> If you need to use an
-        assignment in a conditional expression, a common practice is to put
-        additional parentheses around the assignment. For example:
-  
-        <code>if ((x = y)) { /* statements here */ }</code>
-      </article>
-    </section>
-    <section class="main-section" id="while_statement">
-      <header>while statement</header>
-      <article>
-        A while statement executes its statements as long as a specified condition
-        evaluates to true. A while statement looks as follows:
-  
-        <code>while (condition) statement</code> If the condition becomes false,
-        statement within the loop stops executing and control passes to the
-        statement following the loop.
-  
-        <p>
-          The condition test occurs before statement in the loop is executed. If
-          the condition returns true, statement is executed and the condition is
-          tested again. If the condition returns false, execution stops and
-          control is passed to the statement following while.
-        </p>
-  
-        <p>
-          To execute multiple statements, use a block statement ({ ... }) to group
-          those statements.
-        </p>
-  
-        Example:
-  
-        <p>The following while loop iterates as long as n is less than three:</p>
-  
-        <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
-        <p>
-          With each iteration, the loop increments n and adds that value to x.
-          Therefore, x and n take on the following values:
-        </p>
-  
-        <ul>
-          <li>After the first pass: n = 1 and x = 1</li>
-          <li>After the second pass: n = 2 and x = 3</li>
-          <li>After the third pass: n = 3 and x = 6</li>
-        </ul>
-        <p>
-          After completing the third pass, the condition n &lt; 3 is no longer
-          true, so the loop terminates.
-        </p>
-      </article>
-    </section>
-    <section class="main-section" id="Function_declarations">
-      <header>Function declarations</header>
-      <article>
-        A function definition (also called a function declaration, or function
-        statement) consists of the function keyword, followed by:
-  
-        <ul>
-          <li>The name of the function.</li>
-          <li>
-            A list of arguments to the function, enclosed in parentheses and
-            separated by commas.
-          </li>
-          <li>
-            The JavaScript statements that define the function, enclosed in curly
-            brackets, { }.
-          </li>
-        </ul>
-        <p>
-          For example, the following code defines a simple function named square:
-        </p>
-  
-        <code>function square(number) { return number * number; }</code>
-        <p>
-          The function square takes one argument, called number. The function
-          consists of one statement that says to return the argument of the
-          function (that is, number) multiplied by itself. The return statement
-          specifies the value returned by the function.
-        </p>
-        <code>return number * number;</code>
-        <p>
-          Primitive parameters (such as a number) are passed to functions by
-          value; the value is passed to the function, but if the function changes
-          the value of the parameter, this change is not reflected globally or in
-          the calling function.
-        </p>
-      </article>
-    </section>
-    <section class="main-section" id="Reference">
-      <header>Reference</header>
-      <article>
-        <ul>
-          <li>
-            All the documentation in this page is taken from
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-              target="_blank"
-              >MDN</a
-            >
-          </li>
-        </ul>
-      </article>
-    </section>
-  </main>
-  
-</html>  
+    <nav id="navbar">
+      <header><h3>Waya Labs Docs</h3></header>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Principles">Principles</a></li>
+        <li><a class="nav-link" href="#EVM_Compatible_Development">EVM Compatible Development</a></li>
+        <li><a class="nav-link" href="#The_Avalanche_Network">The Avalanche Network</a></li>
+        <li><a class="nav-link" href="#Avalanche_Network_RPC">Avalanche Network RPC</a></li>
+        <li><a class="nav-link" href="#Add_Avalanche_Network_Programmatically">Add Avalanche Network Programmatically</a></li>
+        <li><a class="nav-link" href="#Data_Structure">Data Structure</a></li>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+         <header><h3>Introduction</h3></header>
+         <article>  
+            <p>
+              Waya Labs is a research and development Hub focus on blockchain innovation
+              to drive mass adoption by building a Digital Sovereign Ecosystem (DSE) by
+              integrating distributed web3 protocols to create a censorship resistance
+              ecosystem for our community.
+            </p>
+
+            <p>
+              Researching and testing creative and successful smart contract use cases are
+              key to identify what works and what could be improved. allowing new solutions
+              and utilities to emerge in a constant testing and development of new ways to
+              participate in the blockchain revolution.
+            </p>
+              <ul>
+                <li>
+                  Our distributed applications will be designed with multiple insentive
+                  based protocols such as work to earn for team members, learn to earn to attract
+                  new users, and participate to earn to reward our community members and NFT holders
+                  with access to special incubator presale allocations and a weekly lottery for
+                  hodlers.
+                </li>
+                <li>
+                  To ensure digital sovereignty it is necessary for each element of Waya Labs
+                  ecosystem to operate as a distributed web3 protocol to minimize the risks
+                  of a single point of failure. the initial versions might hace some centralized
+                  web3 protocols temporarily, each new version will integrate decentralized interoperability
+                  to replace previous centralized funtions.
+                </li>
+              </ul>
+          </article>
+        </section>
+        <section id="Principles" class="main-section">
+             <header><h3>Principles</h3></header>
+             <article>
+               <p>Research and development will focus on the following principles:</p>
+                <ul>
+                  <li>
+                    <b>Digital Sovereign Ecosystems:</b> Build Waya Labs ecosystem on distributed networks, protocols and storage to ensure digital sovereignty for our participating community.
+                  </li>
+                  <li>
+                    <b>Participatory Value Creation:</b> Waya Labs Team members and community will earn by participating in various forms to earn rewards, like liquidity staking, community building and work to earn initiative.
+                  </li>
+                  <li>
+                    <b>Universal Basic Equity:</b> Community participation and deflationary tokenomics linked to automated NFT protocols will ensure value creation and build long lasting equity upside.
+                  </li>
+                </ul>
+             </article>
+        </section>
+        <section id="EVM_Compatible_Development" class="main-section">
+          <header><h3>EVM Compatible Development</h3></header>
+          <article>
+              <p>
+                Ethereum has proven to be the leading blockchain platform to develop
+                smart contracts, althought transaction fees remain high it is without
+                a doubt the leader, altough some emerging chains are stablishing as
+                some sustainable alternatives considering energy consumption, security
+                and scalability abilities.
+              </p>
+              <p>
+                Research of scalability problems in emerging Layer.1 protocols were
+                key to identifying the blockchain we’ve chosen to build on.
+              </p>
+          </article>
+        </section>
+        <section id="The_Avalanche_Network" class="main-section">
+          <header><h3>The Avalanche Network</h3></header>
+          <article>
+            <p>
+              <b>Scalability:</b> designed to be massively scalable. Tri-chain structure
+              with the core consensus engine is able to support a global network
+              of potentially hundreds of millions of internet-connected, low latencies
+              and very high transactions per second.
+            </p>
+            <p>
+              <b>Security:</b> designed with robust high security. Avalanche provides a very
+              strong guarantee of safety when the attacker is below a certain threshold,
+              which can be parametrized by the system designer; it provides graceful
+              degradation when the attacker exceeds this threshold. It can uphold safety
+              guarantees even when the attacker exceeds 80%. It is the ﬁrst permission-less
+              system to exceeds 51% attack safety threshold using the*SNOW consensus.
+            </p>
+            <p>
+              <b>Decentralization:</b> commitment to multiple client implementations and no
+              centralized control of any kind. The ecosystem is designed to avoid
+              divisions between classes of users with different interests. Most importantly
+              there is no distinction between miners, developers, and users, allowing
+              private or public subnets to be created in a compatible environment with any
+              programming language, each subnet then becomes a validator, and can also host
+              it's own blockchain design and decentralized network.
+            </p>
+            <p>
+              <b>Governance:</b> Avalanche is an inclusive platform, which enables anyone to
+              connect to its network and participate in validation and governance. Any
+              token holder can have a vote in selecting key ﬁnancial parameters and in
+              choosing how the system evolves.
+            </p>
+            <p>
+              <b>Interoperability:</b> designed to be a universal and ﬂexible infrastructure
+              for a multitude of blockchains/assets, where the base $AVAX is used for security
+              and as a unit of account for exchange. The Avalanche C-chain is a EVM dedicated
+              for Smart contracts and dApp environments.
+            </p>
+          </article>
+        </section>
+        <section id="Avalanche_Network_RPC" class="main-section">
+          <header><h3>Avalanche Network RPC</h3></header>
+          <article>
+            <p>
+              You can access C-Chain through MetaMask, by defining a custom network.
+              Go to MetaMask, log in, click the network dropdown, and select 'Custom RPC'.
+              Data for Avalanche is as follows.
+            </p>
+              <h3>
+                Avalanche Mainnet Settings:
+              </h3>
+                <code>
+                  Network Name: Avalanche Mainnet C-Chain
+                  New RPC URL: https://api.avax.network/ext/bc/C/rpc
+                  ChainID: 43114
+                  Symbol: AVAX
+                  Explorer: https://snowtrace.io/
+                </code>
+              <h3>
+                Avalanche Testnet Settings:
+              </h3>
+                <code>
+                  Network Name: Avalanche FUJI C-Chain
+                  New RPC URL: https://api.avax-test.network/ext/bc/C/rpc
+                  ChainID: 43113
+                  Symbol: AVAX
+                  Explorer: https://testnet.snowtrace.io/
+                </code>
+            </article>
+        </section>
+        <section id="Add_Avalanche_Network_Programmatically" class="main-section">
+          <header><h3>Add Avalanche Network Programmatically</h3></header>
+          <article>
+            <p>
+              EIP-3035 is an Ethereum Improvement Proposal that defines an RPC method
+              for adding Ethereum-compatible chains to wallet applications.
+            </p>  
+            <p>
+              To add the Avalanche network to Metamask, we need to prepare t
+              he data structures that will be contain all the necessary data.
+            </p>
+          </article>
+        </section>
+        <section id="Data_Structure" class="main-section">
+          <header><h3>Data Structure</h3></header><article>
+          <article>
+            <h3>
+              Main network data:
+            </h3>
+              <code>
+                export const AVALANCHE_MAINNET_PARAMS = {
+                chainId: '0xA86A',
+                chainName: 'Avalanche Mainnet C-Chain',
+                nativeCurrency: {
+                name: 'Avalanche',
+                symbol: 'AVAX',
+                decimals: 18
+                },
+                rpcUrls: ['https://api.avax.network/ext/bc/C/rpc'],
+                blockExplorerUrls: ['https://snowtrace.io/']
+                }
+              </code>
+            <h3p> 
+              Test network data: 
+            </h3>
+              <code>
+                export const AVALANCHE_TESTNET_PARAMS = {
+                chainId: '0xA869',
+                chainName: 'Avalanche Testnet C-Chain',
+                nativeCurrency: {
+                name: 'Avalanche',
+                symbol: 'AVAX',
+                decimals: 18
+                },
+                rpcUrls: ['https://api.avax-test.network/ext/bc/C/rpc'],
+                blockExplorerUrls: ['https://testnet.snowtrace.io/']
+                }
+              </code>
+            <p>
+              To add the network to MetaMask, we need to call the wallet_addEthereumChain method,
+              exposed by the web3 provider.
+            </p>
+              <code> 
+                function addAvalancheNetwork() {
+                injected.getProvider().then(provider => {
+                provider
+                .request({
+                method: 'wallet_addEthereumChain',
+                params: [AVALANCHE_MAINNET_PARAMS]
+                })
+                .catch((error: any) => {
+                console.log(error)
+                })
+                })
+                }
+              </code>
+            <p>
+              Where injected is initialized as a web3-react/injected-connector used to
+              interface with MetaMask APIs. Usage for other popular web frameworks is similar.
+            </p>    
+             <h3>
+               To add the test network replace:
+             </h3> 
+               <code>
+                  AVALANCHE_MAINNET_PARAMS with AVALANCHE_TESTNET_PARAMS
+               </code>
+            <p>
+              Typical usage pattern would be to expose a button calling that method if you get
+              Wrong Network or Error connecting errors when attempting to establish a connection
+              to MetaMask.
+            </p>
+          </article>
+        </section>
+    </main>
+      <script src="script.js"></script>
+  </body>
+</html>
