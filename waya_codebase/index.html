@@ -1,256 +1,270 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> wayalabs </title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/waya-logo-bback.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-    <script src="https://unpkg.com/moralis@1.3.1/dist/moralis.js"></script>
- </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> wayalabs </title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/waya-logo-bback.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis@1.3.1/dist/moralis.js"></script>
+</head>
 
 <body>
- <header>
-  <div class="header__logo">WAYA LABS</div>
-  <button class="header__menu material-icons" id="header-menu" onclick="getElementById('nav').classList.toggle('show')">menu</button>
-  <nav class="header__navbar">
-    <ul class="header__nav" aria-labelledby="header-menu" id="nav">
-      <li><a href="#"><span class="material-icons">email</span>Whitelist</a></li>  
-      <li><a href="#"><span class="material-icons">agriculture</span>Farm</a></li>  
-      <li><a href="#"><span class="material-icons">library_books</span>Docs</a></li> 
-      <li><a href="#"><span class="material-icons">stop</span>Buy NFT</a></li> 
-    </ul>
-  </nav>
-  <div class="header__wallet"></div>
-  <button id="btn-login" class="header__btn--connect">Connect</button>
-</header>
+  <header>
+    <div class="header__logo">WAYA LABS</div>
+    <button class="header__menu material-icons" id="header-menu"
+      onclick="getElementById('nav').classList.toggle('show')">menu</button>
+    <nav class="header__navbar">
+      <ul class="header__nav" aria-labelledby="header-menu" id="nav">
+        <li><a href="#"><span class="material-icons">email</span>Whitelist</a></li>
+        <li><a href="#"><span class="material-icons">agriculture</span>Farm</a></li>
+        <li><a href="#"><span class="material-icons">library_books</span>Docs</a></li>
+        <li><a href="#"><span class="material-icons">stop</span>Buy NFT</a></li>
+      </ul>
+    </nav>
+    <div class="header__wallet"></div>
+    <button id="btn-login" class="header__btn--connect">Connect</button>
+  </header>
 
 
-<main>
-  <div class="container">
-    
-    <div class="panels">
-    <div class="panel panel--info">
-        <span class="material-icons panel__icons panel__icons--info">info</span>
-        <div class="panel__text"><p>We are building a Sovereign Digital Ecosystem.</p>
-          <a  class="panel__link" href="#" title="justo duo dolores et ea rebum">Experimental Beta platform</a>
-        
-      </div>
-    </div>
+  <main>
+    <div class="container">
 
-    <div class="panel panel--warning">
-        <span class="material-icons panel__icons panel__icons--warning">warning</span>
-        <div class="panel__text">
-          <p>Web3 technolofy is still at the experimental stage, which makes it a highly risky investemt. Do your own research before investing.</p> <a class="panel__link" href="#" title="justo duo dolores et ea rebum">High Risk</a></div>
-    </div>
-</div>
-    
-  <div class="card">
-    
-    <div class="card__meta">
-      <a class="card__token" href="#" title="token">
-        <img class="card__image" src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"></img>
-      </a>
-      
-      <h1 class="card__title">Wayalabs token WAYA</h1>
-      
-      <div class="card__owner">
-        <div class="card__owner-address">
-          dherfjeidnekjdhndkpwijfreiuedwqoudbe
+      <div class="panels">
+        <div class="panel panel--info">
+          <span class="material-icons panel__icons panel__icons--info">info</span>
+          <div class="panel__text">
+            <p>We are building a Sovereign Digital Ecosystem.</p>
+            <a class="panel__link" href="#" title="justo duo dolores et ea rebum">Experimental Beta platform</a>
+
+          </div>
         </div>
-        <button class="card_owner-copy-btn">
-          <span class="material-icons">content_copy</span>
-        </button>
-        <button class="card_owner-external-link">
-          <span class="material-icons">ios_share</span>
-        </button>
+
+        <div class="panel panel--warning">
+          <span class="material-icons panel__icons panel__icons--warning">warning</span>
+          <div class="panel__text">
+            <p>Web3 technolofy is still at the experimental stage, which makes it a highly risky investemt. Do your own
+              research before investing.</p> <a class="panel__link" href="#" title="justo duo dolores et ea rebum">High
+              Risk</a>
+          </div>
+        </div>
       </div>
-      
-      <div class="card__status">
-        <span class="material-icons card__warning">warning</span>
-        <span class="material-icons card__report">dangerous</span>
-      </div>
-    
-      <div class="card__actions">
-        <button class="card__copy-btn" title="copy">
-          <span class="material-icons">content_copy</span>
-        </button>
-        <button class="card__toggle-btn" title="toggle">
-          <span class="material-icons">expand_less</span>
-        </button>
-      </div>
-    </div>
-    
-    <div class="card__info">
-      
-      <div class="card__info-property">
-        
-        <div class="card__info-field">
-          <div class="card__info-field-label">Lorem <span>/ipsum</span></div>
-          <div class="card__info-field-value">
-            <div class="card__info-field-value-user transitioning">
-              <span class="card__value">8898<span class="material-icons">warning</span></span>
-              <span class="material-icons card__arrow">trending_flat</span>
+
+      <div class="card">
+
+        <div class="card__meta">
+          <a class="card__token" href="#" title="token">
+            <img class="card__image" src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"></img>
+          </a>
+
+          <h1 class="card__title">Wayalabs token WAYA</h1>
+
+          <div class="card__owner">
+            <div class="card__owner-address">
+              dherfjeidnekjdhndkpwijfreiuedwqoudbe
             </div>
-            <div class="card__info-field-value-current transitioning">
-              <span class="card__value">8898<span class="material-icons">warning</span></span>
-              <span class="material-icons card__arrow">trending_flat</span>
-            </div>
-            <div class="card__info-field-value-new transitioning">
-              <span class="card__value">8898<span class="material-icons">warning</span></span>
+            <button class="card_owner-copy-btn">
+              <span class="material-icons">content_copy</span>
+            </button>
+            <button class="card_owner-external-link">
+              <span class="material-icons">ios_share</span>
+            </button>
+          </div>
+
+          <div class="card__status">
+            <span class="material-icons card__warning">warning</span>
+            <span class="material-icons card__report">dangerous</span>
+          </div>
+
+          <div class="card__actions">
+            <button class="card__copy-btn" title="copy">
+              <span class="material-icons">content_copy</span>
+            </button>
+            <button class="card__toggle-btn" title="toggle">
+              <span class="material-icons">expand_less</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card__info">
+
+          <div class="card__info-property">
+
+            <div class="card__info-field">
+              <div class="card__info-field-label">Lorem <span>/ipsum</span></div>
+              <div class="card__info-field-value">
+                <div class="card__info-field-value-user transitioning">
+                  <span class="card__value">8898<span class="material-icons">warning</span></span>
+                  <span class="material-icons card__arrow">trending_flat</span>
+                </div>
+                <div class="card__info-field-value-current transitioning">
+                  <span class="card__value">8898<span class="material-icons">warning</span></span>
+                  <span class="material-icons card__arrow">trending_flat</span>
+                </div>
+                <div class="card__info-field-value-new transitioning">
+                  <span class="card__value">8898<span class="material-icons">warning</span></span>
+                </div>
               </div>
-          </div>
-        </div>
-        
-        <div class="card__info-field">
-          <div class="card__info-field-label">Lorem</div>
-          <div class="card__info-field-value">
-            <div class="card__info-field-value-user transitioning">
-              <span class="card__value">8%<span class="material-icons">warning</span></span>
-              <span class="material-icons card__arrow">trending_flat</span>
+            </div>
+
+            <div class="card__info-field">
+              <div class="card__info-field-label">Lorem</div>
+              <div class="card__info-field-value">
+                <div class="card__info-field-value-user transitioning">
+                  <span class="card__value">8%<span class="material-icons">warning</span></span>
+                  <span class="material-icons card__arrow">trending_flat</span>
+                </div>
+                <div class="card__info-field-value-current transitioning">
+                  <span class="card__value">8%<span class="material-icons">warning</span></span>
+                  <span class="material-icons card__arrow">trending_flat</span>
+                </div>
+                <div class="card__info-field-value-new transitioning">
+                  <span class="card__value">8%<span class="material-icons">warning</span></span>
+                </div>
               </div>
-            <div class="card__info-field-value-current transitioning">
-              <span class="card__value">8%<span class="material-icons">warning</span></span>
-              <span class="material-icons card__arrow">trending_flat</span>
             </div>
-            <div class="card__info-field-value-new transitioning">
-              <span class="card__value">8%<span class="material-icons">warning</span></span>
+
+            <div class="card__info-field">
+              <div class="card__info-field-label">Lorem</div>
+              <div class="card__info-field-value">
+                <div class="card__info-field-value-user">
+                  <span class="card__value">8%</span>
+                </div>
+                <div class="card__info-field-value-current">
+                  <span class="card__value">8%</span>
+                </div>
               </div>
-          </div>
-        </div>
-            
-        <div class="card__info-field">
-          <div class="card__info-field-label">Lorem</div>
-          <div class="card__info-field-value">
-            <div class="card__info-field-value-user">
-              <span class="card__value">8%</span>
             </div>
-            <div class="card__info-field-value-current">
-              <span class="card__value">8%</span>
+
+          </div>
+
+          <div class="card__info-state">
+
+            <div class="card__info-field">
+              <div class="card__info-field-label">Lorem</div>
+              <div class="card__info-field-state">
+                3284394
+              </div>
+            </div>
+
+            <div class="card__info-field">
+              <div class="card__info-field-label">Lorem</div>
+              <div class="card__info-field-state">
+                Ujidejdi dedek
+              </div>
+            </div>
+
+            <div class="card__info-field">
+              <div class="card__info-field-label">Lorem</div>
+              <div class="card__info-field-state">
+                7435434
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card__detail">
+          <div class="card__detail-field">
+            <div class="card__detail-field-label">Lorem</div>
+            <div class="card__detail-field-state">
+              765454
             </div>
           </div>
-        </div>
-            
-      </div>
-          
-      <div class="card__info-state">
-        
-        <div class="card__info-field">
-          <div class="card__info-field-label">Lorem</div>
-          <div class="card__info-field-state">
-            3284394
-          </div>
-        </div>
-        
-        <div class="card__info-field">
-          <div class="card__info-field-label">Lorem</div>
-          <div class="card__info-field-state">
-            Ujidejdi dedek
-          </div>
-        </div>
-        
-        <div class="card__info-field">
-          <div class="card__info-field-label">Lorem</div>
-          <div class="card__info-field-state">
-            7435434
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  
-    <div class="card__detail">
-      <div class="card__detail-field">
-        <div class="card__detail-field-label">Lorem</div>
-        <div class="card__detail-field-state">
-          765454
-        </div>
-      </div>
-      
-      <div class="card__detail-field">
-        <div class="card__detail-field-label">Lorem</div>
-        <div class="card__detail-field-state">
-          5654565454
-        </div>
-      </div>
-      
-      <div class="card__detail-field">
-        <div class="card__detail-field-label">Lorem</div>
-        <div class="card__detail-field-state">
-          66666
-        </div>
-      </div>
-      
-      <div class="card__detail-field">
-        <div class="card__detail-field-label">Lorem</div>
-        <div class="card__detail-field-state">
-          34564
-        </div>
-      </div>
-      
-    </div>
-  
-    <div class="card__action-group">
-      <form>
-        <input type="number" name="deposit" required placeholder="0">
-        <Label>Lorem</Label>
-        
-        <div class="card__btn-group">
-          <button type="submit">Lorem</button>
-          <button type="submit" disabled>Lorem All</button>
-        </div>
-      </form>
-      
-      <form>
-        <input type="number" name="withdraw" required placeholder="0">
-        <Label>Lorem</Label>
-        
-        <div class="card__btn-group">
-          <button type="submit" disabled>Lorem</button>
-          <button type="submit">Lorem All</button>
-        </div>
-      </form>
-      
-      <form>
-        <Label class="card__label--without-input">Lorem</Label>
-        <span class="card__rewards">200 $</span>
-        <button type="submit">Lorem</button>
-      </form>
-    </div>
-  
-    <div class="card__text">
-      <div class="card__text-col">
-        <div class="card__text-title">Lorem ipsum dolor</div>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-      </div>
-      
-      <div class="card__text-col">
-        <div class="card__text-title">Lorem ipsum dolor</div>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-        <ul>
-          <li>liquyam erat, sed diam voluptua</li>
-          <li>liquyam erat, sed diam voluptua</li>
-          <li>liquyam erat, sed diam voluptua</li>
-        </ul>
-      </div>
-      
-      <div class="card__text-col">
-        <div class="card__text-title">Lorem ipsum dolor</div>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-      </div>
 
+          <div class="card__detail-field">
+            <div class="card__detail-field-label">Lorem</div>
+            <div class="card__detail-field-state">
+              5654565454
+            </div>
+          </div>
+
+          <div class="card__detail-field">
+            <div class="card__detail-field-label">Lorem</div>
+            <div class="card__detail-field-state">
+              66666
+            </div>
+          </div>
+
+          <div class="card__detail-field">
+            <div class="card__detail-field-label">Lorem</div>
+            <div class="card__detail-field-state">
+              34564
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card__action-group">
+          <form>
+            <input type="number" name="deposit" required placeholder="0">
+            <Label>Lorem</Label>
+
+            <div class="card__btn-group">
+              <button type="submit">Lorem</button>
+              <button type="submit" disabled>Lorem All</button>
+            </div>
+          </form>
+
+          <form>
+            <input type="number" name="withdraw" required placeholder="0">
+            <Label>Lorem</Label>
+
+            <div class="card__btn-group">
+              <button type="submit" disabled>Lorem</button>
+              <button type="submit">Lorem All</button>
+            </div>
+          </form>
+
+          <form>
+            <Label class="card__label--without-input">Lorem</Label>
+            <span class="card__rewards">200 $</span>
+            <button type="submit">Lorem</button>
+          </form>
+        </div>
+
+        <div class="card__text">
+          <div class="card__text-col">
+            <div class="card__text-title">Lorem ipsum dolor</div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="card__text-col">
+            <div class="card__text-title">Lorem ipsum dolor</div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            </p>
+            <ul>
+              <li>liquyam erat, sed diam voluptua</li>
+              <li>liquyam erat, sed diam voluptua</li>
+              <li>liquyam erat, sed diam voluptua</li>
+            </ul>
+          </div>
+
+          <div class="card__text-col">
+            <div class="card__text-title">Lorem ipsum dolor</div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
     </div>
-    
-  </div>
-</div>
-</main>
+  </main>
 
-<div id="stars"></div>
-<div id="stars2"></div>
-<div id="stars3"></div>
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
 
-    <script type="text/javascript" src="./main.js"></script>
-</script></body>
+  <script type="text/javascript" src="./main.js"></script>
+  </script>
+</body>
+
 </html>
