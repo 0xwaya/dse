@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT-Modern-Variant
 
-pragma solidity >=0.6.0 <0.9.0;
+pragma solidity ^0.6.6
 
-import '@openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol';
-import '@chainlink-brownie-contracts/blob/main/contracts/src/v0.6/VRFConsumerBase.sol';
+import "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract macaw_collection is ERC721, VRFConsumerBase {
+contract MacawCollection is ERC721, VRFConsumerBase {
     
-    bytes32 internal keyhash;
+    bytes32 internal keyHash;
     uint256 public fee;
     uint256 public tokenCounter;
 
@@ -20,11 +20,11 @@ contract macaw_collection is ERC721, VRFConsumerBase {
     mapping(bytes32 => uint256) public requestIdToTokenId;
     event requestedCollectible(bytes32 indexed requestId);
 
-    constructor(address _VRFCoordinator, address _LinkToken, byte32 _keyhash)
-    VRFConsumerBase(_VRFCoordinator, _LinkToken)
-    ERC721("Web3 Parrots", "MACAW")
+    constructor(address _VRFCoordinator, address _linkToken, byte32 _keyhash)
+    VRFConsumerBase(_VRFCoordinator, _linkToken)
+    ERC721("Amazonian Web3 Parrots", "MACAW")
     {
-        keyhash = _keyhash;
+        keyHash = _keyhash;
         feed = 0.1 * 10 **18; // 0.1 LINK // 
     }
 
