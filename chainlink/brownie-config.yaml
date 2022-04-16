@@ -4,16 +4,17 @@ reports:
   exclude_contracts:
     - SafeMath
 dependencies:
-  - smartcontractkit/chainlink-brownie-contracts@0.4.0
-  - OpenZeppelin/openzeppelin-contracts@4.5.0
+  - smartcontractkit/chainlink-brownie-contracts@1.2.0'
+  - OpenZeppelin/openzeppelin-contracts@3.4.0
 compiler:
   solc:
-    remappings:
-      - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.4.0"
-      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.5.0"
+      version: 0.6.6
+      remappings:
+      - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.2.0'    
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0'
 # automatically fetch contract sources from Etherscan
 autofetch_sources: True
-# Uncomment to use the .env file
+dotenv: .env
 # set a custom mnemonic for the development network
 networks:
   default: development
@@ -41,7 +42,6 @@ networks:
     update_interval: 60
     verify: False
   rinkeby:
-    dotenv: .env
     vrf_coordinator: "0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B"
     link_token: "0x01be23585060835e02b77ef475b0cc51aa1e0709"
     keyhash: "0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311"
@@ -50,7 +50,7 @@ networks:
     jobId: "6b88e0402e5d415eb946e528b8e0c7ba"
     eth_usd_price_feed: "0x8A753747A1Fa494EC906cE90E9f37563A8AF630e"
     # Change to True if you have an Etherscan API key and want to verify
-    verify: False
+    verify: True
   fuji:
     link_token: "0x0b9d5D9136855f6FEc3c0993feE6E9CE8a297846"
     fee: 100000000000000000
