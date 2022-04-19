@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 from brownie import PriceFeedConsumer, config, network
-from scripts.helpful_scripts import (
+from scripts.macaw_Collection.helpful_scripts import (
     get_account,
     get_contract,
     BLOCK_CONFIRMATIONS_FOR_VERIFICATION
