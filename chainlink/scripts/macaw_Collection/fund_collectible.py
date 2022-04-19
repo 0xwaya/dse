@@ -1,0 +1,1 @@
+from brownie import AdvancedCollectible 
