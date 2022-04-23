@@ -1,8 +1,8 @@
-
-# chainlink-mix
-.vscode
+# Brownie
+build
+.pytest_cache
 .env
-build/
+.DS*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -11,7 +11,7 @@ __pycache__/
 
 # C extensions
 *.so
-build/
+
 # Distribution / packaging
 .Python
 build/

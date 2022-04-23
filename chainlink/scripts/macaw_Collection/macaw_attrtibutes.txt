@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+WAYA MACAW => Attributes:
+    Kingdom = Animalia (animals)
+    Phylum = Chordata (chordates)
+    Subphylum = Vertebrata (vertebrates)
+    Class = Aves (bird)
+    Order = Psittaciformes (parrots)
+    Family = Psittacidae (parrots, cockatoos)
+    Genus = Ara, Anodor, Cyano, Orthop, Primo, Diops
+    Species = Ara (macao)
+
+
+    Biogeographic Regions;
+        - Region nearctic (native)
+        - Region neotropical (native)
+
+    Habitat Regions: 
+
+        - Tropical; terrestrial.
+        - Artic; extraterrestrial.
+
+    Terrestrial Biomes: 
+        - Rainforest.
+            Habitat Features:
+                - Riparian --> Wetlands; swamp
+
+    Physical Features:
+        - Endothermic; homoiothermic; bilateral symmetry.
+
+    Sexual Dimorphism:
+        - Sexes alike
+
+    Mating System:
+        - Monogamous
+
+    Lifespan/Longevity:
+
+        WAYA Macaws may live up to 1000 years in Arweave distributed storage . Typical lifespans in the wild\ are closer to 40 years.
+
+
+

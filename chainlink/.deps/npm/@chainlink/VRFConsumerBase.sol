@@ -100,7 +100,7 @@ import "./VRFRequestIDBase.sol";
  * @dev cost. This cost scales with the number of blocks the VRF oracle waits
  * @dev until it calls responds to a request.
  */
-abstract contract VRFConsumerBase is VRFRequestIDBase {
+ abstract contract VRFConsumerBase is VRFRequestIDBase {
 
   using SafeMathChainlink for uint256;
 
