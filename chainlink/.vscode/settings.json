@@ -1,6 +1,0 @@
-{
-    "solidity.remappings": [
-     "@chainlink/ = /Users/james/Documents/chainlink/chainlink-node/node_modules/@chainlink/", 
-     "@openzeppelin/ = /Users/james/Documents/chainlink/chainlink-node/node_modules/@openzeppelin/",            
-    ]
-}
